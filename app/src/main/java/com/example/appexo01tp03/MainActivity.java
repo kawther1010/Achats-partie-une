@@ -45,26 +45,11 @@ public class MainActivity extends AppCompatActivity {
         listAchats.add("200 g Olives noires");
 
 
-
-        //Question 1 partie 02
-        /*
-        ArrayList<Achats> listAchats= new ArrayList<Achats>();
-        listAchats.add( new Achats("Farine", 10));
-        listAchats.add( new Achats("Huil", 10));
-        listAchats.add( new Achats("Tomate", 4));
-        listAchats.add( new Achats("Levure", 10));
-        listAchats.add( new Achats("Eau", 10));
-        listAchats.add( new Achats("Extrait de vanille", 1));
-        listAchats.add( new Achats("poivre noir", 10));
-        listAchats.add( new Achats("Olive noires", 200));
-*/
         ListView ListAChatsView= (ListView) findViewById(R.id.listAchatsView);
 
 
 
-        //R.id.textView,
         adapter= new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,  listAchats);
-        //MyAdapter adapter= new ArrayAdapter<Achats>(this, listAchats);
 
         listAchatsView.setAdapter(adapter);
 
